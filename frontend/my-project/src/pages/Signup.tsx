@@ -18,7 +18,7 @@ const Signup = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try{
-    await axios.post("http://localhost:5000/api/auth/signup", form);
+    await axios.post("https://login-and-signin-form-21.onrender.com/api/auth/signup", form);
     alert("Signup Successful");
     navigate("/");
     } catch (error: any) {
